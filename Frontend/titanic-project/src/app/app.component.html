@@ -1,0 +1,128 @@
+<form
+  #titanicForm="ngForm"
+  (ngSubmit)="getPrediction(titanicForm.value)"
+  nz-form
+  class="ant-advanced-search-form partner-form"
+>
+  <div nz-row [nzGutter]="24">
+    <div nz-col [nzSpan]="6"></div>
+    <div nz-col [nzSpan]="12" class="form-header">
+      <h1>Titanic Passenger info:</h1>
+    </div>
+    <div nz-col [nzSpan]="6"></div>
+  </div>
+
+
+  <div nz-row [nzGutter]="24">
+    <div nz-col [nzSpan]="4"></div>
+    <div nz-col [nzSpan]="14">
+      <nz-form-item>
+        <nz-form-label [nzSpan]="10">Passenger Title </nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <nz-input-group>
+            <nz-select name="passenger_title" ngModel>
+              <nz-option [nzLabel]="'Mr'" [nzValue]="0"></nz-option>
+              <nz-option [nzLabel]="'Mrs'" [nzValue]="1"></nz-option>
+              <nz-option [nzLabel]="'Miss'" [nzValue]="2"></nz-option>
+              <nz-option [nzLabel]="'Master'" [nzValue]="3"></nz-option>
+              <nz-option [nzLabel]="'Others'" [nzValue]="3"></nz-option>
+            </nz-select>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label [nzSpan]="10">Passenger Gender </nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <nz-input-group>
+            <nz-select name="passenger_gender" ngModel>
+              <nz-option [nzLabel]="'Male'" [nzValue]="0"></nz-option>
+              <nz-option [nzLabel]="'Female'" [nzValue]="1"></nz-option>
+            </nz-select>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label [nzSpan]="10">Passenger Age </nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <nz-input-group>
+            <nz-select name="passenger_age" ngModel>
+              <nz-option [nzLabel]="'Child'" [nzValue]="0"></nz-option>
+              <nz-option [nzLabel]="'Young'" [nzValue]="1"></nz-option>
+              <nz-option [nzLabel]="'Adult'" [nzValue]="2"></nz-option>
+              <nz-option [nzLabel]="'Mid-Age'" [nzValue]="3"></nz-option>
+              <nz-option [nzLabel]="'Senior'" [nzValue]="4"></nz-option>
+            </nz-select>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label [nzSpan]="10">Passenger Class </nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <nz-input-group>
+            <nz-select name="passenger_class" ngModel>
+              <nz-option [nzLabel]="'1st class'" [nzValue]="1"></nz-option>
+              <nz-option [nzLabel]="'2nd class'" [nzValue]="2"></nz-option>
+              <nz-option [nzLabel]="'3rd class'" [nzValue]="3"></nz-option>
+            </nz-select>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label [nzSpan]="10">Passenger Family Size </nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <nz-input-group>
+            <nz-select name="passenger_family_size" ngModel>
+              <nz-option [nzLabel]="'Single'" [nzValue]="0"></nz-option>
+              <nz-option [nzLabel]="'Small'" [nzValue]="1"></nz-option>
+              <nz-option [nzLabel]="'Big'" [nzValue]="2"></nz-option>
+            </nz-select>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label [nzSpan]="10">Passenger Embarked: </nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <nz-input-group>
+            <nz-select name="passenger_emberked" ngModel>
+              <nz-option [nzLabel]="'Cherbourg'" [nzValue]="1"></nz-option>
+              <nz-option [nzLabel]="'Southampton'" [nzValue]="0"></nz-option>
+              <nz-option [nzLabel]="'Queenstown'" [nzValue]="2"></nz-option>
+            </nz-select>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+
+      <nz-form-item>
+        <nz-form-label [nzSpan]="10">Ticket Fare </nz-form-label>
+        <nz-form-control [nzSpan]="14">
+          <nz-input-group>
+            <nz-select name="passenger_ticket_fare" ngModel>
+              <nz-option [nzLabel]="'Low'" [nzValue]="0"></nz-option>
+              <nz-option [nzLabel]="'Medium'" [nzValue]="1"></nz-option>
+              <nz-option [nzLabel]="'High'" [nzValue]="2"></nz-option>
+              <nz-option [nzLabel]="'Extreme'" [nzValue]="3"></nz-option>
+            </nz-select>
+          </nz-input-group>
+        </nz-form-control>
+      </nz-form-item>
+    </div>
+
+    <div nz-col [nzSpan]="4"></div>
+  </div>
+
+  <div nz-row [nzGutter]="24">
+    <div nz-col [nzSpan]="8"></div>
+    <div nz-col [nzSpan]="8"></div>
+    <div nz-col [nzSpan]="8">
+      <button nz-button [nzType]="'primary'">Get Prediction</button>
+    </div>
+  </div>
+
+</form>
+
+
