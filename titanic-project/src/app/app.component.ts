@@ -19,7 +19,7 @@ export class AppComponent {
 
   ngOnInit(): void {}
 
-  url: any = "http://127.0.0.1:5000/predict";
+  url: any = "https://titanic-project-backend.herokuapp.com/predict";
 
   getPrediction(data) {
     console.log(data);
