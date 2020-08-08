@@ -14,5 +14,5 @@ Steps:
   https://oloshprogrammer.wordpress.com/2020/06/30/deploy-machine-learning-model-with-backendflask-and-frontendangular-part3/ 
 
 
-##Online demo:
+## Online demo:
 https://titanic-project-frontend.herokuapp.com/
