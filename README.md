@@ -3,7 +3,7 @@ Analysis of titanic data with python
 
 
 
-Steps:
+### Steps:
   1. Create a jupyter notebook and analyse titanic dataset. Process and finally build,train a machine learning model.
   https://oloshprogrammer.wordpress.com/2020/06/30/deploy-machine-learning-model-with-backendflask-and-frontendangular-part1/
   
@@ -14,5 +14,5 @@ Steps:
   https://oloshprogrammer.wordpress.com/2020/06/30/deploy-machine-learning-model-with-backendflask-and-frontendangular-part3/ 
 
 
-## Online demo:
+### Online demo:
 https://titanic-project-frontend.herokuapp.com/
